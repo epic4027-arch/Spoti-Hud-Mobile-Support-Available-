@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "spoti_hud",
+  "version": "${version}",
+  "name": "Spoti Hud",
+  "description": "Minecraft 1.21+ ve PojavLauncher destekli Spotify HUD modu.",
+  "authors": [
+    "Yajobs"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/spoti_hud/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.spotihud.SpotiHudMod"
+    ]
+  },
+  "mixins": [
+    "spoti_hud.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": ">=1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
